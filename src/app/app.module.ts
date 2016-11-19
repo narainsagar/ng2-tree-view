@@ -6,6 +6,7 @@ import { Router } from "@angular/router";
 import { routing } from "./app.routes";
 import { AppComponent } from "./app.component";
 import { TreeViewModule } from "./tree-view";
+import { DemoModule } from "./demo-tree-view";
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { TreeViewModule } from "./tree-view";
     FormsModule,
     HttpModule,
     routing,
-    TreeViewModule
+    TreeViewModule,
+    DemoModule
   ],
   declarations: [
     AppComponent

@@ -46,7 +46,6 @@ let styles: string = `
 
 .tree a {
   cursor: pointer;
-  color: blue;
 }
 .tree .selected {
   color: #f00;
@@ -112,7 +111,6 @@ export class TreeViewComponent implements OnInit {
     if (!this.amIChild) {
       this.addToggleToArray(this.nodes);
     }
-    console.log(this.icons);
   }
 
   nodeSelected(node?: any): void {

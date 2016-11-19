@@ -15,7 +15,7 @@ export class DemoComponent {
   sampleNodes: any;
   sampleIconsClasses: any;
   constructor() {
-    this.sampleNodes = MockData;
+    this.sampleNodes = MockData.nodes;
     this.sampleIconsClasses = {
         nodeWithChild: "fa fa-folder",
         selectedNodeWithChild: "fa fa-folder-open",

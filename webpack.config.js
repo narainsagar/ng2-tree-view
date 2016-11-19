@@ -32,7 +32,7 @@ const common = {
     'main': './src/main.ts'
   },
   output: {
-    path: path.join(__dirname, 'dist/tree-view'),
+    path: path.join(__dirname, 'dist/'),
     filename: 'bundle.js'
   },
   plugins: [

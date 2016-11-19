@@ -1,0 +1,16 @@
+dist/
+node_modules/
+.env
+local/
+log.html
+output.xml
+report.html
+selenium/
+typings/
+npm-debug.log
+selenium-screenshot-*.png
+tslint-report
+TESTS-*.xml
+coverage
+.vscode
+.idea

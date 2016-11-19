@@ -1,10 +1,8 @@
 # Navtive Ng2 Tree View
 
-## ng2-tree-view [![npm version](https://badge.fury.io/js/ng2-tree-view.svg)](http://badge.fury.io/js/ng2-tree-view) [![npm downloads](https://img.shields.io/npm/dm/ng2-tree-view.svg)](https://npmjs.org/ng2-tree-view)
+## ng2-tree-view [![npm version](https://badge.fury.io/js/ng2-tree-view.svg)](http://badge.fury.io/js/ng2-tree-view) [![npm downloads](https://img.shields.io/npm/dm/ng2-tree-view.svg)](https://npmjs.org/ng2-tree-view) [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
 
 Follow me [![twitter](https://img.shields.io/twitter/follow/babarxm.svg?style=social&label=%20babarxm)](https://twitter.com/babarxm) to be notified about new releases.
-
-[![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
 
 ## Quick start
 `npm install ng2-tree-view --save`

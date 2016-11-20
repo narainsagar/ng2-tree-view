@@ -14,5 +14,10 @@
     "node_modules",
     "node_modules/@types",
     "typings"
+  ],
+  "files": [
+    "./typings/index.d.ts",
+    "./index.ts",
+    "./src/app/tree-view/tree-view.module.ts"
   ]
 }

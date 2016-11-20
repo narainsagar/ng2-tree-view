@@ -30,6 +30,11 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/babarxm.svg?style=so
 
 ## Example
 
+Angular2:
+```angular2
+    import { TreeViewModule } from "ng2-tree-view";
+```
+
 HTML:
 ```html
     <tree-view (onNodeSelected)="selectedNode($event)" [nodes]="sampleNodes"></tree-view>

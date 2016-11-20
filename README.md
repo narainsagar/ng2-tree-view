@@ -37,7 +37,7 @@ Angular2:
 
 HTML:
 ```html
-    <tree-view (onNodeSelected)="selectedNode($event)" [nodes]="sampleNodes"></tree-view>
+    <tree-view (onNodeSelected)="selectedNode($event)" [customClass]="'my-custom-class'" [nodes]="sampleNodes"></tree-view>
 ```
 
 JavaScript:

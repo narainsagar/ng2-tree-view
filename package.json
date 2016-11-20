@@ -1,6 +1,6 @@
 {
   "name": "ng2-tree-view",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Ng2 tree view.",
   "scripts": {
     "build": "NODE_ENV=production webpack -p",

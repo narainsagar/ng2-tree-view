@@ -1,0 +1,18 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "sourceMap": true,
+    "noEmit": true,
+    "target": "es5",
+    "types": ["es6-shim", "jasmine"]
+  },
+  "exclude": [
+    "node_modules",
+    "node_modules/@types",
+    "typings"
+  ]
+}

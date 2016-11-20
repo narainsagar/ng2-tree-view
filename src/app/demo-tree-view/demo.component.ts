@@ -8,20 +8,13 @@ import { MockData } from "../../../tests";
 @Component({
   selector: "demo-app",
   template: `
-    <tree-view (onNodeSelected)="selectedNode($event)" [icons]="sampleIconsClasses" [nodes]="sampleNodes"></tree-view>
+    <tree-view (onNodeSelected)="selectedNode($event)" [nodes]="sampleNodes"></tree-view>
   `
 })
 export class DemoComponent {
   sampleNodes: any;
-  sampleIconsClasses: any;
   constructor() {
     this.sampleNodes = MockData.nodes;
-    this.sampleIconsClasses = {
-        nodeWithChild: "fa fa-folder",
-        selectedNodeWithChild: "fa fa-folder-open",
-        nodeWithNoChild: "fa fa-file",
-        selectedNodeWithNoChild: "fa fa-file"
-      };
   }
 
   selectedNode(node): void {

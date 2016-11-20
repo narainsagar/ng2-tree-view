@@ -69,9 +69,8 @@ span, a, div, ol, li {
       <div class="{{customClass}}">
         <ol *ngIf="nodes.length > 0">
           <li *ngFor="let node of nodes; let i = index" [class.hideLine]="!amIChild" [class.showLine]="amIChild">
-            <a (click)="node.toggled=!node.toggled" [class.toggle]="node.toggled">
-              <i *ngIf="node.nodes" class="{{node.toggled ? icons.selectedNodeWithChild : icons.nodeWithChild}}" aria-hidden="true"></i>
-              <i *ngIf="!node.nodes" class="{{node.toggled ? icons.selectedNodeWithNoChild : icons.nodeWithNoChild}}" aria-hidden="true"></i>
+            <a (click)="node.toggled=!node.toggled" class="{{node.toggled ? node.activeClass + ' toggle' : node.class}}">
+              <i aria-hidden="true"></i>
             </a>
             <span (click)="node.toggled=!node.toggled" [class.selected]="node.id === selectedNode.id" (click)="selectNode(node)">{{node.name}}</span>
             <tree-view (onNodeSelected)="selNode($event)" [amIChild]="true"  *ngIf="node.nodes && node.toggled" [nodes]="node.nodes"></tree-view>
@@ -85,7 +84,6 @@ export class TreeViewComponent implements OnInit {
   @Input() nodes;
   @Input() amIChild: boolean;
   @Input() customClass: any;
-  @Input() icons: any;
   @Output() onNodeSelected = new EventEmitter<Object>();
   selectedNode: any = {};
   nodeCounter: number = 1;
@@ -94,14 +92,6 @@ export class TreeViewComponent implements OnInit {
 
   ngOnInit(): void {
     this.customClass = this.customClass ? this.customClass : "tree";
-    if (!this.icons) {
-      this.icons = {
-        nodeWithChild: "fa fa-folder",
-        selectedNodeWithChild: "fa fa-folder-open",
-        nodeWithNoChild: "fa fa-file",
-        selectedNodeWithNoChild: "fa fa-file"
-      };
-    }
     this.subscription = this.service.getNodeEmitter().subscribe(node => {
       this.nodeSelected(node);
     });

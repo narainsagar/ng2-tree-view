@@ -29,6 +29,5 @@ describe("DemoComponent", () => {
 
   it("`DemoComponent` shoud have mock data", () => {
     expect(demoComponent.sampleNodes.length).toBeGreaterThan(0);
-    expect(demoComponent.sampleIconsClasses.nodeWithChild.length).toBeGreaterThan(0);
   });
 });

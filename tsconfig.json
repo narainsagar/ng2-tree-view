@@ -15,5 +15,8 @@
     "node_modules/@types",
     "typings"
   ],
-  "files": []
+  "files": [
+    "index.ts",
+    "src/app/tree-view"
+  ]
 }
